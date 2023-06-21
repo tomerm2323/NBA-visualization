@@ -169,7 +169,9 @@ def generate_finalist_bar_graph(finalist_df, total_teams_df, year):
         yaxis=dict(title='Normalized Average')
     )
 
+
     # Create the figure
     fig = go.Figure(data=[trace1, trace2], layout=layout)
+    fig.update_yaxes(visible=False)
 
     return fig

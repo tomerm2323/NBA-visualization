@@ -24,7 +24,7 @@ avg_stat_players_df = pd.read_csv('https://raw.githubusercontent.com/tomerm2323/
 players_df = pd.read_csv('https://raw.githubusercontent.com/tomerm2323/NBA-visualization/master/src/players/normelized_diff_players.csv')
 teams_df = pd.read_csv('https://raw.githubusercontent.com/tomerm2323/NBA-visualization/master/src/teams/fix_team_merge.csv')
 players_diff = pd.read_csv("https://raw.githubusercontent.com/tomerm2323/NBA-visualization/master/src/players/regular_season_playoff_merge_players.csv")
-finalist_df = pd.read_csv("teams/norm_finalist_avg.csv")
+finalist_df = pd.read_csv("https://raw.githubusercontent.com/tomerm2323/NBA-visualization/master/src/teams/norm_finalist_avg.csv")
 total_teams_df = pd.read_csv("https://raw.githubusercontent.com/tomerm2323/NBA-visualization/master/src/teams/norm_total_avg.csv")
 
 # Graphs and plots generation

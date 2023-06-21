@@ -20,12 +20,12 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.FLATLY])
 load_figure_template('FLATLY')
 
 # DataFrames initialization
-avg_stat_players_df = pd.read_csv('players/avg_stats_players.csv')
-players_df = pd.read_csv('players/normelized_diff_players.csv')
-teams_df = pd.read_csv('teams/fix_team_merge.csv')
-players_diff = pd.read_csv("players/regular_season_playoff_merge_players.csv")
-finalist_df = pd.read_csv("teams/norm_finalist_avg.csv")
-total_teams_df = pd.read_csv("teams/norm_total_avg.csv")
+avg_stat_players_df = pd.read_csv('https://raw.githubusercontent.com/tomerm2323/NBA-visualization/master/src/players/avg_stats_players.csv')
+players_df = pd.read_csv('https://raw.githubusercontent.com/tomerm2323/NBA-visualization/master/src/players/normelized_diff_players.csv')
+teams_df = pd.read_csv('https://raw.githubusercontent.com/tomerm2323/NBA-visualization/master/src/teams/fix_team_merge.csv')
+players_diff = pd.read_csv("https://raw.githubusercontent.com/tomerm2323/NBA-visualization/master/src/players/regular_season_playoff_merge_players.csv")
+finalist_df = pd.read_csv("https://raw.githubusercontent.com/tomerm2323/NBA-visualization/master/src/teams/norm_finalist_avg.csv")
+total_teams_df = pd.read_csv("https://raw.githubusercontent.com/tomerm2323/NBA-visualization/master/src/teams/norm_total_avg.csv")
 
 # Graphs and plots generation
 #   TODO: Change color legend of the heat map so its shown clearly

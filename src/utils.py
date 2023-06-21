@@ -89,9 +89,9 @@ def get_leading_scorer_card():
                     dbc.Col(
                         dbc.CardBody(
                             [
-                                html.H4("Michael Jordan", className="scorer-name-card-title"),
+                                html.H4("Michael Jordan", className="scorer-name-card-title", style={"font-weight": "bold"}),
                                 html.H5("Leading Scorer Per game", className="scorer-card-title"),
-                                html.H5("Season & Playoffs", className="scorer-second-card-title")
+                                html.H5("In Season & Playoffs", className="scorer-second-card-title")
                             ]
                         ),
                         # className="col-md-8",
@@ -114,7 +114,7 @@ def get_leading_assister_card():
                 [
                     dbc.Col(
                         dbc.CardImg(
-                            src='https://wallpapercave.com/wp/wp1883886.jpg',
+                            src='https://cdn.britannica.com/27/189527-050-5BAD12C2/Magic-Johnson.jpg',
                             className="img-fluid rounded-start",
                         ),
                         className="col",
@@ -122,7 +122,7 @@ def get_leading_assister_card():
                     dbc.Col(
                         dbc.CardBody(
                             [
-                                html.H4("Magic Johnson ", className="assister-name-card-title"),
+                                html.H4("Magic Johnson ", className="assister-name-card-title",  style={"font-weight": "bold"}),
                                 html.H5("Leading Assister Per game", className="assister-card-title"),
                                 html.H5("In Season & Playoffs", className="assister-second-card-title"),
                             ]
@@ -155,7 +155,7 @@ def get_leading_3pt_card():
                     dbc.Col(
                         dbc.CardBody(
                             [
-                                html.H4("Steph Curry", className="3pt-name-card-title"),
+                                html.H4("Steph Curry", className="3pt-name-card-title", style={"font-weight": "bold"}),
                                 html.H5("Leading 3PT Per game", className="3pt-card-title"),
                                 html.H5("In Season & Playoffs", className="3pt-second-card-title"),
                             ]

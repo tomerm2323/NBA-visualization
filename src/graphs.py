@@ -151,7 +151,7 @@ def generate_finalist_bar_graph(finalist_df, total_teams_df, year):
         x=stat_avg_columns,
         y=filtered_data_1[stat_avg_columns].values[0],
         name='Finalist Averages',
-        marker=dict(color='rgb(0, 128, 0)')
+        marker=dict(color='rgb(164, 216, 216)')
     )
 
     # Create the bar chart trace for dataset 2
@@ -159,7 +159,7 @@ def generate_finalist_bar_graph(finalist_df, total_teams_df, year):
         x=stat_avg_columns,
         y=filtered_data_2[stat_avg_columns].values[0],
         name='All Teams Averages',
-        marker=dict(color='rgb(0, 0, 255)')
+        marker=dict(color='rgb(255, 209, 220)')
     )
 
     # Create the layout

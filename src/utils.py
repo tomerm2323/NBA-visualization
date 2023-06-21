@@ -1,6 +1,8 @@
 import dash_bootstrap_components as dbc
 import dash_html_components as html
 
+from src.heatmap import get_players_heatmap
+
 
 def get_players_stats_names():
     label_and_values = []
@@ -46,7 +48,7 @@ def get_team_stats_dropdown_options(df):
 
 
 def get_player_dropdown_options(df):
-    return df['player'].unique()[:50]
+    return get_players_heatmap(59, df)
 
 
 def get_player_diff_stats_dropdown_options(df):

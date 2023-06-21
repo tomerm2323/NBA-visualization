@@ -142,7 +142,7 @@ def get_dash_layout():
                 html.Div(id='second-row-second-col',
                          children=[
                              html.Label('Select player:', style={'font-weight': 'bold', 'text-align': 'center'}),
-                             dcc.Dropdown(id='player-dropdown', options=get_player_dropdown_options(players_diff), value='Kobe Bryant'),
+                             dcc.Dropdown(id='player-dropdown', options=get_player_dropdown_options(avg_stat_players_df), value='Kobe Bryant'),
                              html.Label('Select Statistics:', style={'font-weight': 'bold', 'text-align': 'center'}),
                              dcc.Dropdown(id='player-stats-dropdown', options=get_player_diff_stats_dropdown_options(players_diff), value='fg_pct'),
                              dcc.Graph(

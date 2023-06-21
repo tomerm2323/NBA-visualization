@@ -24,7 +24,7 @@ avg_stat_players_df = pd.read_csv('https://raw.githubusercontent.com/tomerm2323/
 players_df = pd.read_csv('https://raw.githubusercontent.com/tomerm2323/NBA-visualization/master/src/players/normelized_diff_players.csv')
 teams_df = pd.read_csv('https://raw.githubusercontent.com/tomerm2323/NBA-visualization/master/src/teams/fix_team_merge.csv')
 players_diff = pd.read_csv("https://raw.githubusercontent.com/tomerm2323/NBA-visualization/master/src/players/regular_season_playoff_merge_players.csv")
-finalist_df = pd.read_csv("https://raw.githubusercontent.com/tomerm2323/NBA-visualization/master/src/teams/norm_finalist_avg.csv")
+finalist_df = pd.read_csv("teams/norm_finalist_avg.csv")
 total_teams_df = pd.read_csv("https://raw.githubusercontent.com/tomerm2323/NBA-visualization/master/src/teams/norm_total_avg.csv")
 
 # Graphs and plots generation
@@ -87,9 +87,11 @@ def get_dash_layout():
                 dbc.Col(get_leading_3pt_card(), width={'size': 3, 'offset': 0, 'order': 1})
             ]
         ),
-        html.H2(children="But is it really the same ?", className='mt-4 mb-4',
+        html.H2(children="But are the playoffs and season really the same ?", className='mt-4 mb-4',
                 style={'text-align': 'center'}),
         dbc.Row([
+            html.H3(children="Exploring the Variations in Players' Performance between the Playoffs and Regular Season", className='mt-4 mb-4',
+                    style={'text-align': 'center'}),
             html.Div(
                 style={'width': '2000px', 'overflowX': 'scroll'},
                 id='first-row',

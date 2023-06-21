@@ -3,7 +3,8 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 
-def generate_heatmap(player_column, dataframe,stat_columns):
+
+def generate_heatmap(player_column, dataframe, stat_columns):
     # Transpose the dataframe to switch the x and y axes
     transposed_df = dataframe.set_index(player_column)[stat_columns].T
 
@@ -19,7 +20,7 @@ def generate_heatmap(player_column, dataframe,stat_columns):
     # Set axis labels
     fig.update_layout(
         xaxis_title='Player Name',
-        yaxis_title='Statistic'
+        yaxis_title='Statistics'
     )
     return fig
 def get_players_heatmap(num_of_players, df):

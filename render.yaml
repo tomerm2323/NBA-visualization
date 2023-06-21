@@ -1,7 +1,7 @@
 services:
   # See https://render.com/docs/blueprint-spec for more info on render blueprints
   - type: web
-    name: Argentina-road-to-the-cup
+    name: NBA-Playoffs-and-Season
     env: python
     plan: free
     # A requirements.txt file must exist

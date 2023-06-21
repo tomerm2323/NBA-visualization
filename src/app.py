@@ -15,7 +15,7 @@ from src.utils import get_team_dropdown_options, get_players_stats_names, get_te
     get_leading_assister_card, get_leading_3pt_card, get_season_dropdown_options
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.FLATLY])
-# server = app.server
+server = app.server
 
 load_figure_template('FLATLY')
 

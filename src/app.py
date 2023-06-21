@@ -115,6 +115,10 @@ def get_dash_layout():
         ),
         dbc.Row([
             dbc.Col([
+                html.H4(
+                    children="Teams Statistics in the Playoffs and Regular Season",
+                    className='mt-4 mb-4',
+                    style={'text-align': 'center'}),
                 html.Div(id='second-row-first-col',
                          children=[
                              html.Label('Select team:', style={'font-weight': 'bold', 'text-align': 'center'}),
@@ -131,6 +135,10 @@ def get_dash_layout():
                 width={'size': 6, 'offset': 0, 'order': 1}
             ),
             dbc.Col([
+                html.H4(
+                    children="Player Statistics difference, Playoffs and Regular Season",
+                    className='mt-4 mb-4',
+                    style={'text-align': 'center'}),
                 html.Div(id='second-row-second-col',
                          children=[
                              html.Label('Select player:', style={'font-weight': 'bold', 'text-align': 'center'}),
@@ -148,6 +156,10 @@ def get_dash_layout():
             )
         ]),
         dbc.Row([
+            html.H4(
+                children="Finalist Teams Statistic averages & All Teams",
+                className='mt-4 mb-4',
+                style={'text-align': 'center'}),
             html.Div(
                 style={'width': '2000px', 'overflowX': 'scroll'},
                 id='third-row',

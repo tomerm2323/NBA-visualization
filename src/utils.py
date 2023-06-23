@@ -48,7 +48,9 @@ def get_team_stats_dropdown_options(df):
 
 
 def get_player_dropdown_options(df):
-    return get_players_heatmap(59, df)
+    players = get_players_heatmap(100, df)
+    sorted_players = sorted(players)
+    return sorted_players
 
 
 def get_player_diff_stats_dropdown_options(df):
@@ -63,7 +65,7 @@ def get_player_diff_stats_dropdown_options(df):
     label_and_values.append({'label': ' PF     ', 'value': 'pf_per_g'})
     label_and_values.append({'label': ' PTS    ', 'value': 'pts_per_g'})
     label_and_values.append({'label': ' BPM    ', 'value': 'bpm'})
-    label_and_values.append({'label': ' PER??    ', 'value': 'per'})
+    label_and_values.append({'label': ' PER   ', 'value': 'per'})
     label_and_values.append({'label': ' TS%    ', 'value': 'ts_pct'})
     label_and_values.append({'label': ' USAGE    ', 'value': 'usg_pct'})
     label_and_values.append({'label': ' WS     ', 'value': 'ws'})

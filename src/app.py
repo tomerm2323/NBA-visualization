@@ -136,7 +136,7 @@ def get_dash_layout():
             ),
             dbc.Col([
                 html.H4(
-                    children="Player Statistics difference, Playoffs and Regular Season",
+                    children="Player Statistics difference, Playoffs and Season",
                     className='mt-4 mb-4',
                     style={'text-align': 'center'}),
                 html.Div(id='second-row-second-col',

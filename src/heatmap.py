@@ -28,7 +28,7 @@ def generate_heatmap(player_column, dataframe, stat_columns):
     mid_val = (min_val + max_val) / 2
 
     fig.update_traces(colorbar_orientation='h', colorbar_len=0.3, colorbar_x=0.15,
-                      colorbar_tickmode="array", colorbar_ticktext=["Better in Season", "-", "-", "No Difference", "-", "-", "Better in Playoffs"],
+                      colorbar_tickmode="array", colorbar_ticktext=["Better in Playoffs", "-", "-", "No Difference", "-", "-", "Better in Season"],
                       colorbar_tickvals=[min_val, -1, 0, mid_val, 2, 3, max_val])
 
     return fig
